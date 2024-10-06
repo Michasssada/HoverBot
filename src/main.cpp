@@ -21,9 +21,6 @@ int main()
     ReadCfg Config;             // Create conf object
     ServoControl cam_servo(18); // Initialize ServoControl on GPIO pin 12
     SSD1306 display(0x3C);
-    display.init();
-    display.clearDisplay();
-    int i;
     while (true)
     {
 
