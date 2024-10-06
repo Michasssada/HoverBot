@@ -27,17 +27,5 @@ int main()
     while (true)
     {
 
-        for (i = 40; i <= 180; i++)
-        {
-            cam_servo.setAngle(i);
-            cout << i << endl;
-            delay(100);
-        }
-        for (i = 180; i >= 40; i--)
-        {
-            cam_servo.setAngle(i);
-            cout << i << endl;
-            delay(100);
-        }
     }
 }
