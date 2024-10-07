@@ -7,6 +7,7 @@
 #include <thread>   // Include for std::this_thread::sleep_for
 #include <chrono>   // Include for std::chrono::milliseconds
 #include "SSD1306.h"
+#include "engines.h"
 using namespace std;
 
 void print(string text)

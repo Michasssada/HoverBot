@@ -177,6 +177,30 @@ src/Servo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/Servo.cpp.s
 .PHONY : src/Servo.cpp.s
 
+src/engines.o: src/engines.cpp.o
+.PHONY : src/engines.o
+
+# target to build an object file
+src/engines.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/engines.cpp.o
+.PHONY : src/engines.cpp.o
+
+src/engines.i: src/engines.cpp.i
+.PHONY : src/engines.i
+
+# target to preprocess a source file
+src/engines.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/engines.cpp.i
+.PHONY : src/engines.cpp.i
+
+src/engines.s: src/engines.cpp.s
+.PHONY : src/engines.s
+
+# target to generate assembly for a file
+src/engines.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/engines.cpp.s
+.PHONY : src/engines.cpp.s
+
 src/gyro.o: src/gyro.cpp.o
 .PHONY : src/gyro.o
 
@@ -312,6 +336,9 @@ help:
 	@echo "... src/Servo.o"
 	@echo "... src/Servo.i"
 	@echo "... src/Servo.s"
+	@echo "... src/engines.o"
+	@echo "... src/engines.i"
+	@echo "... src/engines.s"
 	@echo "... src/gyro.o"
 	@echo "... src/gyro.i"
 	@echo "... src/gyro.s"

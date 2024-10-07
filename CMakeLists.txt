@@ -16,6 +16,7 @@ set(SOURCES
     src/read_cfg.cpp
     src/gyro.cpp
     src/SSD1306.cpp
+    src/engines.cpp
 
     # Add other source files here
 )
