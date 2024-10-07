@@ -5,6 +5,7 @@
 class Engines{
     public:
        Engines(int Pin,int Dir_pin);
+       ~Engines();
        void engine_write(int speed,bool Direction);//0-100 engine power, forward is false backward is true
        void stop();
     private:

@@ -5,14 +5,19 @@ Engines::Engines(int Pin, int Dir_pin): pin(Pin), dir(Dir_pin){
         std::cerr << "Failed to initialize WiringPi" << std::endl;
     }
     softPwmCreate(Pin,0, 100);
+    pinMode(dir,OUTPUT);
     
 
 }
+Engines::~Engines(){
+    softPwmWrite(pin, 0);
+}
 void Engines::engine_write(int speed, bool Direction){
     if(Direction){
-        Wir
+        digitalWrite(dir,1);
     }
     else{
+        digitalWrite(dir,0);
 
     }
     softPwmWrite(pin, speed);

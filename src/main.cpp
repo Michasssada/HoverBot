@@ -22,8 +22,16 @@ int main()
     ReadCfg Config;             // Create conf object
     ServoControl cam_servo(18); // Initialize ServoControl on GPIO pin 12
     SSD1306 display(0x3C);
+    Engines test_eng(12,16);
     while (true)
     {
+        test_eng.engine_write(1,false);
+        delay(1000);
+        test_eng.engine_write(1,true);
+        delay(1000);
+        test_eng.stop();
+        break;
+    
 
     }
 }
