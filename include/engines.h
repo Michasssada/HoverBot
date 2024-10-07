@@ -4,7 +4,10 @@
 #include <softPwm.h>
 class Engines{
     public:
-       bool init(int Pin);
+       Engines(int Pin);
+       void engine_write(int speed);
+    private:
+        int pin;
     
 };
 #endif

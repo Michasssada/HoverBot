@@ -1,11 +1,15 @@
 #include "engines.h"
 #include <iostream>
-bool init(int Pin){
+Engines::Engines(int Pin): pin(Pin){
     if (wiringPiSetupGpio() == -1) {
         std::cerr << "Failed to initialize WiringPi" << std::endl;
-        return false;
     }
     softPwmCreate(Pin,0, 100);
+    
+
+}
+void Engines::engine_write(int speed){
+    softPwmWrite(pin, speed);
 
 }
 
