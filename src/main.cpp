@@ -8,6 +8,7 @@
 #include <chrono>   // Include for std::chrono::milliseconds
 #include "SSD1306.h"
 #include "engines.h"
+#include "Stabilizer.h"
 using namespace std;
 
 void print(string text)
@@ -25,12 +26,12 @@ int main()
     Engines test_eng(12,16);
     while (true)
     {
-        test_eng.engine_write(1,false);
         delay(1000);
-        test_eng.engine_write(1,true);
+        test_eng.engine_write(5,false);
         delay(1000);
-        test_eng.stop();
-        break;
+        test_eng.engine_write(5,true);
+        delay(1000);
+
     
 
     }

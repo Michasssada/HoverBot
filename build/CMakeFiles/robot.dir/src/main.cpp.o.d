@@ -162,4 +162,15 @@ CMakeFiles/robot.dir/src/main.cpp.o: /home/a/robot/src/main.cpp \
  /usr/include/c++/12/limits /usr/include/c++/12/bits/parse_numbers.h \
  /usr/include/c++/12/chrono /home/a/robot/include/SSD1306.h \
  /usr/local/include/wiringPiI2C.h /home/a/robot/include/fonts.h \
- /home/a/robot/include/engines.h
+ /home/a/robot/include/engines.h /home/a/robot/include/Stabilizer.h \
+ /home/a/robot/include/engines.h /home/a/robot/include/gyro.h \
+ /usr/include/c++/12/cmath /usr/include/math.h \
+ /usr/include/aarch64-linux-gnu/bits/math-vector.h \
+ /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/aarch64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/aarch64-linux-gnu/bits/fp-logb.h \
+ /usr/include/aarch64-linux-gnu/bits/fp-fast.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
+ /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/aarch64-linux-gnu/bits/iscanonical.h

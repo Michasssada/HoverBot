@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/robot.dir/src/SSD1306.cpp.o.d"
   "CMakeFiles/robot.dir/src/Servo.cpp.o"
   "CMakeFiles/robot.dir/src/Servo.cpp.o.d"
+  "CMakeFiles/robot.dir/src/Stabilizer.cpp.o"
+  "CMakeFiles/robot.dir/src/Stabilizer.cpp.o.d"
   "CMakeFiles/robot.dir/src/engines.cpp.o"
   "CMakeFiles/robot.dir/src/engines.cpp.o.d"
   "CMakeFiles/robot.dir/src/gyro.cpp.o"

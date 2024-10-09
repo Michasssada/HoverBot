@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/a/robot/src/SSD1306.cpp" "CMakeFiles/robot.dir/src/SSD1306.cpp.o" "gcc" "CMakeFiles/robot.dir/src/SSD1306.cpp.o.d"
   "/home/a/robot/src/Servo.cpp" "CMakeFiles/robot.dir/src/Servo.cpp.o" "gcc" "CMakeFiles/robot.dir/src/Servo.cpp.o.d"
+  "/home/a/robot/src/Stabilizer.cpp" "CMakeFiles/robot.dir/src/Stabilizer.cpp.o" "gcc" "CMakeFiles/robot.dir/src/Stabilizer.cpp.o.d"
   "/home/a/robot/src/engines.cpp" "CMakeFiles/robot.dir/src/engines.cpp.o" "gcc" "CMakeFiles/robot.dir/src/engines.cpp.o.d"
   "/home/a/robot/src/gyro.cpp" "CMakeFiles/robot.dir/src/gyro.cpp.o" "gcc" "CMakeFiles/robot.dir/src/gyro.cpp.o.d"
   "/home/a/robot/src/log.cpp" "CMakeFiles/robot.dir/src/log.cpp.o" "gcc" "CMakeFiles/robot.dir/src/log.cpp.o.d"

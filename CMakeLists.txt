@@ -17,6 +17,7 @@ set(SOURCES
     src/gyro.cpp
     src/SSD1306.cpp
     src/engines.cpp
+    src/Stabilizer.cpp
 
     # Add other source files here
 )
