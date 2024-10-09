@@ -153,30 +153,6 @@ src/SSD1306.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/SSD1306.cpp.s
 .PHONY : src/SSD1306.cpp.s
 
-src/Servo.o: src/Servo.cpp.o
-.PHONY : src/Servo.o
-
-# target to build an object file
-src/Servo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/Servo.cpp.o
-.PHONY : src/Servo.cpp.o
-
-src/Servo.i: src/Servo.cpp.i
-.PHONY : src/Servo.i
-
-# target to preprocess a source file
-src/Servo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/Servo.cpp.i
-.PHONY : src/Servo.cpp.i
-
-src/Servo.s: src/Servo.cpp.s
-.PHONY : src/Servo.s
-
-# target to generate assembly for a file
-src/Servo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/Servo.cpp.s
-.PHONY : src/Servo.cpp.s
-
 src/Stabilizer.o: src/Stabilizer.cpp.o
 .PHONY : src/Stabilizer.o
 
@@ -200,30 +176,6 @@ src/Stabilizer.s: src/Stabilizer.cpp.s
 src/Stabilizer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/Stabilizer.cpp.s
 .PHONY : src/Stabilizer.cpp.s
-
-src/engines.o: src/engines.cpp.o
-.PHONY : src/engines.o
-
-# target to build an object file
-src/engines.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/engines.cpp.o
-.PHONY : src/engines.cpp.o
-
-src/engines.i: src/engines.cpp.i
-.PHONY : src/engines.i
-
-# target to preprocess a source file
-src/engines.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/engines.cpp.i
-.PHONY : src/engines.cpp.i
-
-src/engines.s: src/engines.cpp.s
-.PHONY : src/engines.s
-
-# target to generate assembly for a file
-src/engines.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/engines.cpp.s
-.PHONY : src/engines.cpp.s
 
 src/gyro.o: src/gyro.cpp.o
 .PHONY : src/gyro.o
@@ -297,6 +249,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/movement/Servo.o: src/movement/Servo.cpp.o
+.PHONY : src/movement/Servo.o
+
+# target to build an object file
+src/movement/Servo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/movement/Servo.cpp.o
+.PHONY : src/movement/Servo.cpp.o
+
+src/movement/Servo.i: src/movement/Servo.cpp.i
+.PHONY : src/movement/Servo.i
+
+# target to preprocess a source file
+src/movement/Servo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/movement/Servo.cpp.i
+.PHONY : src/movement/Servo.cpp.i
+
+src/movement/Servo.s: src/movement/Servo.cpp.s
+.PHONY : src/movement/Servo.s
+
+# target to generate assembly for a file
+src/movement/Servo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/movement/Servo.cpp.s
+.PHONY : src/movement/Servo.cpp.s
+
+src/movement/engines.o: src/movement/engines.cpp.o
+.PHONY : src/movement/engines.o
+
+# target to build an object file
+src/movement/engines.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/movement/engines.cpp.o
+.PHONY : src/movement/engines.cpp.o
+
+src/movement/engines.i: src/movement/engines.cpp.i
+.PHONY : src/movement/engines.i
+
+# target to preprocess a source file
+src/movement/engines.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/movement/engines.cpp.i
+.PHONY : src/movement/engines.cpp.i
+
+src/movement/engines.s: src/movement/engines.cpp.s
+.PHONY : src/movement/engines.s
+
+# target to generate assembly for a file
+src/movement/engines.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot.dir/build.make CMakeFiles/robot.dir/src/movement/engines.cpp.s
+.PHONY : src/movement/engines.cpp.s
+
 src/read_cfg.o: src/read_cfg.cpp.o
 .PHONY : src/read_cfg.o
 
@@ -357,15 +357,9 @@ help:
 	@echo "... src/SSD1306.o"
 	@echo "... src/SSD1306.i"
 	@echo "... src/SSD1306.s"
-	@echo "... src/Servo.o"
-	@echo "... src/Servo.i"
-	@echo "... src/Servo.s"
 	@echo "... src/Stabilizer.o"
 	@echo "... src/Stabilizer.i"
 	@echo "... src/Stabilizer.s"
-	@echo "... src/engines.o"
-	@echo "... src/engines.i"
-	@echo "... src/engines.s"
 	@echo "... src/gyro.o"
 	@echo "... src/gyro.i"
 	@echo "... src/gyro.s"
@@ -375,6 +369,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/movement/Servo.o"
+	@echo "... src/movement/Servo.i"
+	@echo "... src/movement/Servo.s"
+	@echo "... src/movement/engines.o"
+	@echo "... src/movement/engines.i"
+	@echo "... src/movement/engines.s"
 	@echo "... src/read_cfg.o"
 	@echo "... src/read_cfg.i"
 	@echo "... src/read_cfg.s"

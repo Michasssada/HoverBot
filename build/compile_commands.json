@@ -16,8 +16,8 @@
 },
 {
   "directory": "/home/a/robot/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/a/robot/include -g -std=gnu++11 -o CMakeFiles/robot.dir/src/Servo.cpp.o -c /home/a/robot/src/Servo.cpp",
-  "file": "/home/a/robot/src/Servo.cpp"
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/a/robot/include -g -std=gnu++11 -o CMakeFiles/robot.dir/src/movement/Servo.cpp.o -c /home/a/robot/src/movement/Servo.cpp",
+  "file": "/home/a/robot/src/movement/Servo.cpp"
 },
 {
   "directory": "/home/a/robot/build",
@@ -36,8 +36,8 @@
 },
 {
   "directory": "/home/a/robot/build",
-  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/a/robot/include -g -std=gnu++11 -o CMakeFiles/robot.dir/src/engines.cpp.o -c /home/a/robot/src/engines.cpp",
-  "file": "/home/a/robot/src/engines.cpp"
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/a/robot/include -g -std=gnu++11 -o CMakeFiles/robot.dir/src/movement/engines.cpp.o -c /home/a/robot/src/movement/engines.cpp",
+  "file": "/home/a/robot/src/movement/engines.cpp"
 },
 {
   "directory": "/home/a/robot/build",

@@ -12,11 +12,11 @@ set(SOURCES
     src/main.cpp
     src/speak.cpp
     src/log.cpp
-    src/Servo.cpp
+    src/movement/Servo.cpp
     src/read_cfg.cpp
     src/gyro.cpp
     src/SSD1306.cpp
-    src/engines.cpp
+    src/movement/engines.cpp
     src/Stabilizer.cpp
 
     # Add other source files here

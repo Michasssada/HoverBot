@@ -111,19 +111,19 @@ CMakeFiles/robot.dir/src/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot.dir/src/log.cpp.s"
 	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a/robot/src/log.cpp -o CMakeFiles/robot.dir/src/log.cpp.s
 
-CMakeFiles/robot.dir/src/Servo.cpp.o: CMakeFiles/robot.dir/flags.make
-CMakeFiles/robot.dir/src/Servo.cpp.o: /home/a/robot/src/Servo.cpp
-CMakeFiles/robot.dir/src/Servo.cpp.o: CMakeFiles/robot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robot.dir/src/Servo.cpp.o"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robot.dir/src/Servo.cpp.o -MF CMakeFiles/robot.dir/src/Servo.cpp.o.d -o CMakeFiles/robot.dir/src/Servo.cpp.o -c /home/a/robot/src/Servo.cpp
+CMakeFiles/robot.dir/src/movement/Servo.cpp.o: CMakeFiles/robot.dir/flags.make
+CMakeFiles/robot.dir/src/movement/Servo.cpp.o: /home/a/robot/src/movement/Servo.cpp
+CMakeFiles/robot.dir/src/movement/Servo.cpp.o: CMakeFiles/robot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/robot.dir/src/movement/Servo.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robot.dir/src/movement/Servo.cpp.o -MF CMakeFiles/robot.dir/src/movement/Servo.cpp.o.d -o CMakeFiles/robot.dir/src/movement/Servo.cpp.o -c /home/a/robot/src/movement/Servo.cpp
 
-CMakeFiles/robot.dir/src/Servo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot.dir/src/Servo.cpp.i"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a/robot/src/Servo.cpp > CMakeFiles/robot.dir/src/Servo.cpp.i
+CMakeFiles/robot.dir/src/movement/Servo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot.dir/src/movement/Servo.cpp.i"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a/robot/src/movement/Servo.cpp > CMakeFiles/robot.dir/src/movement/Servo.cpp.i
 
-CMakeFiles/robot.dir/src/Servo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot.dir/src/Servo.cpp.s"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a/robot/src/Servo.cpp -o CMakeFiles/robot.dir/src/Servo.cpp.s
+CMakeFiles/robot.dir/src/movement/Servo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot.dir/src/movement/Servo.cpp.s"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a/robot/src/movement/Servo.cpp -o CMakeFiles/robot.dir/src/movement/Servo.cpp.s
 
 CMakeFiles/robot.dir/src/read_cfg.cpp.o: CMakeFiles/robot.dir/flags.make
 CMakeFiles/robot.dir/src/read_cfg.cpp.o: /home/a/robot/src/read_cfg.cpp
@@ -167,19 +167,19 @@ CMakeFiles/robot.dir/src/SSD1306.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot.dir/src/SSD1306.cpp.s"
 	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a/robot/src/SSD1306.cpp -o CMakeFiles/robot.dir/src/SSD1306.cpp.s
 
-CMakeFiles/robot.dir/src/engines.cpp.o: CMakeFiles/robot.dir/flags.make
-CMakeFiles/robot.dir/src/engines.cpp.o: /home/a/robot/src/engines.cpp
-CMakeFiles/robot.dir/src/engines.cpp.o: CMakeFiles/robot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/robot.dir/src/engines.cpp.o"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robot.dir/src/engines.cpp.o -MF CMakeFiles/robot.dir/src/engines.cpp.o.d -o CMakeFiles/robot.dir/src/engines.cpp.o -c /home/a/robot/src/engines.cpp
+CMakeFiles/robot.dir/src/movement/engines.cpp.o: CMakeFiles/robot.dir/flags.make
+CMakeFiles/robot.dir/src/movement/engines.cpp.o: /home/a/robot/src/movement/engines.cpp
+CMakeFiles/robot.dir/src/movement/engines.cpp.o: CMakeFiles/robot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/a/robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/robot.dir/src/movement/engines.cpp.o"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/robot.dir/src/movement/engines.cpp.o -MF CMakeFiles/robot.dir/src/movement/engines.cpp.o.d -o CMakeFiles/robot.dir/src/movement/engines.cpp.o -c /home/a/robot/src/movement/engines.cpp
 
-CMakeFiles/robot.dir/src/engines.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot.dir/src/engines.cpp.i"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a/robot/src/engines.cpp > CMakeFiles/robot.dir/src/engines.cpp.i
+CMakeFiles/robot.dir/src/movement/engines.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robot.dir/src/movement/engines.cpp.i"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/a/robot/src/movement/engines.cpp > CMakeFiles/robot.dir/src/movement/engines.cpp.i
 
-CMakeFiles/robot.dir/src/engines.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot.dir/src/engines.cpp.s"
-	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a/robot/src/engines.cpp -o CMakeFiles/robot.dir/src/engines.cpp.s
+CMakeFiles/robot.dir/src/movement/engines.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robot.dir/src/movement/engines.cpp.s"
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/a/robot/src/movement/engines.cpp -o CMakeFiles/robot.dir/src/movement/engines.cpp.s
 
 CMakeFiles/robot.dir/src/Stabilizer.cpp.o: CMakeFiles/robot.dir/flags.make
 CMakeFiles/robot.dir/src/Stabilizer.cpp.o: /home/a/robot/src/Stabilizer.cpp
@@ -200,11 +200,11 @@ robot_OBJECTS = \
 "CMakeFiles/robot.dir/src/main.cpp.o" \
 "CMakeFiles/robot.dir/src/speak.cpp.o" \
 "CMakeFiles/robot.dir/src/log.cpp.o" \
-"CMakeFiles/robot.dir/src/Servo.cpp.o" \
+"CMakeFiles/robot.dir/src/movement/Servo.cpp.o" \
 "CMakeFiles/robot.dir/src/read_cfg.cpp.o" \
 "CMakeFiles/robot.dir/src/gyro.cpp.o" \
 "CMakeFiles/robot.dir/src/SSD1306.cpp.o" \
-"CMakeFiles/robot.dir/src/engines.cpp.o" \
+"CMakeFiles/robot.dir/src/movement/engines.cpp.o" \
 "CMakeFiles/robot.dir/src/Stabilizer.cpp.o"
 
 # External object files for target robot
@@ -213,11 +213,11 @@ robot_EXTERNAL_OBJECTS =
 robot: CMakeFiles/robot.dir/src/main.cpp.o
 robot: CMakeFiles/robot.dir/src/speak.cpp.o
 robot: CMakeFiles/robot.dir/src/log.cpp.o
-robot: CMakeFiles/robot.dir/src/Servo.cpp.o
+robot: CMakeFiles/robot.dir/src/movement/Servo.cpp.o
 robot: CMakeFiles/robot.dir/src/read_cfg.cpp.o
 robot: CMakeFiles/robot.dir/src/gyro.cpp.o
 robot: CMakeFiles/robot.dir/src/SSD1306.cpp.o
-robot: CMakeFiles/robot.dir/src/engines.cpp.o
+robot: CMakeFiles/robot.dir/src/movement/engines.cpp.o
 robot: CMakeFiles/robot.dir/src/Stabilizer.cpp.o
 robot: CMakeFiles/robot.dir/build.make
 robot: CMakeFiles/robot.dir/link.txt
