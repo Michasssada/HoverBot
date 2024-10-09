@@ -1,3 +1,0 @@
-/home/a/robot/build/CMakeFiles/robot.dir
-/home/a/robot/build/CMakeFiles/edit_cache.dir
-/home/a/robot/build/CMakeFiles/rebuild_cache.dir
