@@ -1,13 +1,13 @@
 #include "main.h"
 #include "speak.h" // Include the header file for the speech class
 #include "log.h"
-#include "Servo.h" // Ensure this is the correct header for your Servo class
+#include "movement/Servo.h" // Ensure this is the correct header for your Servo class
 #include "read_cfg.h"
 #include <iostream> // Include this for std::cout and std::string
 #include <thread>   // Include for std::this_thread::sleep_for
 #include <chrono>   // Include for std::chrono::milliseconds
 #include "SSD1306.h"
-#include "engines.h"
+#include "movement/engines.h"
 #include "Stabilizer.h"
 using namespace std;
 

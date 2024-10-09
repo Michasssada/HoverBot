@@ -1,5 +1,5 @@
 // ServoControl.cpp
-#include "Servo.h"
+#include "movement/Servo.h"
 #include <iostream>
 
 // Constructor

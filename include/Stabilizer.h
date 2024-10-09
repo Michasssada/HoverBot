@@ -1,7 +1,7 @@
 #ifndef STABILIZER_H
 #define STABILIZER_H
 
-#include "engines.h"
+#include "movement/engines.h"
 #include "gyro.h"
 
 class Stabilizer {

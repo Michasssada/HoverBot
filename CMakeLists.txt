@@ -14,7 +14,7 @@ set(SOURCES
     src/log.cpp
     src/movement/Servo.cpp
     src/read_cfg.cpp
-    src/sensor/gyro.cpp
+    src/sensors/gyro.cpp
     src/SSD1306.cpp
     src/movement/engines.cpp
     src/Stabilizer.cpp
