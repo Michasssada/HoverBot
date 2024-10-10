@@ -26,11 +26,7 @@ int main()
     Engines test_eng(12,16);
     while (true)
     {
-        delay(1000);
-        test_eng.engine_write(5,false);
-        delay(1000);
-        test_eng.engine_write(5,true);
-        delay(1000);
+        
 
     
 
