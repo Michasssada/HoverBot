@@ -1,4 +1,4 @@
-module xd
+module tts-hoverbot
 
 go 1.23.1
 
