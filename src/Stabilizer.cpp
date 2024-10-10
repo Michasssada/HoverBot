@@ -1,4 +1,5 @@
 #include "Stabilizer.h"
+using namespace std;
 Stabilizer::Stabilizer(int pinPwmLeft,int pinDirLeft,int pinPwmRight,int pinDirRight) : gyro(gyro), engL(engL), engR(engR){
     MPU6050 gyro;
     Engines engL(pinPwmLeft,pinDirLeft);
@@ -6,6 +7,7 @@ Stabilizer::Stabilizer(int pinPwmLeft,int pinDirLeft,int pinPwmRight,int pinDirR
 }
 void Stabilizer::stabilize(){
     float get_rotation = gyro.getRoll();
+    cout<< get_rotation << endl;
     if(get_rotation >=2||get_rotation <=-2){
         if(get_rotation >= 0){
             engLeft(2,true);

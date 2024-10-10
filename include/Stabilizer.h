@@ -2,6 +2,7 @@
 #define STABILIZER_H
 
 #include "movement/engines.h"
+#include <iostream>
 #include "gyro.h"
 
 class Stabilizer {

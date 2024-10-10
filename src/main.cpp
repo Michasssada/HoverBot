@@ -18,7 +18,6 @@ void print(string text)
 
 int main()
 {
-    speech mySpeech;            // Create the speech object
     logger Logger;              // Create logs object
     ReadCfg Config;             // Create conf object
     ServoControl cam_servo(18); // Initialize ServoControl on GPIO pin 12
