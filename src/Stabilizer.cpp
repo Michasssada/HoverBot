@@ -1,7 +1,8 @@
 #include "Stabilizer.h"
-Stabilizer::Stabilizer(int pinPwmLeft,int pinDirLeft) : gyro(gyro), engL(engL), engR(engR){
+Stabilizer::Stabilizer(int pinPwmLeft,int pinDirLeft,int pinPwmRight,int pinDirRight) : gyro(gyro), engL(engL), engR(engR){
     MPU6050 gyro;
     Engines engL(pinPwmLeft,pinDirLeft);
+    Engines engR(pinPwmRight, pinDirRight);
 }
 void Stabilizer::stabilize(){
     float get_rotation = gyro.getRoll();

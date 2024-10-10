@@ -22,12 +22,12 @@ int main()
     logger Logger;              // Create logs object
     ReadCfg Config;             // Create conf object
     ServoControl cam_servo(18); // Initialize ServoControl on GPIO pin 12
+    Stabilizer stabilize(12,16,13,6);
     SSD1306 display(0x3C);
     Engines test_eng(12,16);
     while (true)
     {
-        
-
+        stabilize.stabilize();
     
 
     }

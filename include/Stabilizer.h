@@ -6,7 +6,7 @@
 
 class Stabilizer {
 public:
-    Stabilizer(int pinPwmLeft,int pinDirLeft);
+    Stabilizer(int pinPwmLeft,int pinDirLeft,int pinPwmRight,int pinDirRight);
     void stabilize();
     void engLeft(int speed, bool dir);
     void engRight(int speed, bool dir);
