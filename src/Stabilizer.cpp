@@ -6,7 +6,7 @@ Stabilizer::Stabilizer(int pinPwmLeft,int pinDirLeft,int pinPwmRight,int pinDirR
     Engines engR(pinPwmRight, pinDirRight);
 }
 void Stabilizer::stabilize(){
-    float get_rotation = gyro.getRoll();
+    float get_rotation = gyro.roll();
     cout<< get_rotation << endl;
     if(get_rotation >=2||get_rotation <=-2){
         if(get_rotation >= 0){

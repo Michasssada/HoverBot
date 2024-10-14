@@ -7,6 +7,7 @@
 #include <thread>   // Include for std::this_thread::sleep_for
 #include <chrono>   // Include for std::chrono::milliseconds
 #include "SSD1306.h"
+#include "gyro.h"
 #include "movement/engines.h"
 #include "Stabilizer.h"
 using namespace std;
@@ -24,10 +25,13 @@ int main()
     Stabilizer stabilize(12,16,13,6);
     SSD1306 display(0x3C);
     Engines test_eng(12,16);
+    MPU6050 gyro;
     while (true)
     {
-        stabilize.stabilize();
-    
+        //stabilize.stabilize();
+        cout<< gyro.roll()<<endl;
+
+        
 
     }
 }
