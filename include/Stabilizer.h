@@ -8,13 +8,13 @@
 class Stabilizer {
 public:
     Stabilizer(int pinPwmLeft,int pinDirLeft,int pinPwmRight,int pinDirRight);
-    void stabilize();
+    void stabilize(float gyroin);
     void engLeft(int speed, bool dir);
     void engRight(int speed, bool dir);
 
 
 private:
-    MPU6050 gyro;
+    
     Engines engL;
     Engines engR;
 };

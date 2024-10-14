@@ -1,21 +1,22 @@
 #include "Stabilizer.h"
+#define ENG_TEST_SPEED 4
 using namespace std;
-Stabilizer::Stabilizer(int pinPwmLeft,int pinDirLeft,int pinPwmRight,int pinDirRight) : gyro(gyro), engL(engL), engR(engR){
-    MPU6050 gyro;
+Stabilizer::Stabilizer(int pinPwmLeft,int pinDirLeft,int pinPwmRight,int pinDirRight) : engL(engL), engR(engR){
+
     Engines engL(pinPwmLeft,pinDirLeft);
     Engines engR(pinPwmRight, pinDirRight);
 }
-void Stabilizer::stabilize(){
-    float get_rotation = gyro.roll();
+void Stabilizer::stabilize(float gyroin){
+    float get_rotation = gyroin;
     cout<< get_rotation << endl;
     if(get_rotation >=2||get_rotation <=-2){
         if(get_rotation >= 0){
-            engLeft(2,true);
-            engRight(2,true);
+            engL.engine_write(4,true);
+            engR.engine_write(4,true);
         }
         if(get_rotation >= 0){
-            engLeft(2,false);
-            engRight(2, false);
+            engL.engine_write(4,true);
+            engR.engine_write(4,true);
         }
     }
 

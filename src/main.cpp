@@ -21,15 +21,30 @@ int main()
 {
     logger Logger;              // Create logs object
     ReadCfg Config;             // Create conf object
-    ServoControl cam_servo(18); // Initialize ServoControl on GPIO pin 12
-    Stabilizer stabilize(12,16,13,6);
+    //Stabilizer stabilize(25,16,13,6);
     SSD1306 display(0x3C);
-    Engines test_eng(12,16);
+    Engines engL(12,26);
+    Engines engR(18, 16);
+
     MPU6050 gyro;
     while (true)
     {
-        //stabilize.stabilize();
-        cout<< gyro.roll()<<endl;
+        float get_rotation = gyro.roll();
+        cout<< get_rotation << endl;
+        if(get_rotation >=5||get_rotation <=-5){
+            if(get_rotation <= 0){
+                engL.engine_write(4,false);
+                engR.engine_write(4,true);
+            }
+            if(get_rotation >= 0){
+                engL.engine_write(4,true);
+                engR.engine_write(4,false);
+            }
+        }
+        else{
+            engL.engine_write(0,true);
+            engR.engine_write(0,true);
+        }
 
         
 
