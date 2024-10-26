@@ -10,13 +10,16 @@
 #include "gyro.h"
 #include "movement/engines.h"
 #include "Stabilizer.h"
+#include "PID.h"
 using namespace std;
 
 void print(string text)
 {
     cout << text << endl; // Function to print text to console
 }
-
+void stabilize(){
+    
+}
 int main()
 {
     logger Logger;              // Create logs object
@@ -25,26 +28,26 @@ int main()
     SSD1306 display(0x3C);
     Engines engL(12,26);
     Engines engR(18, 16);
-
+    PID pid(1.0, 0, 0);
     MPU6050 gyro;
+    Logger.new_log("init complete");
     while (true)
     {
-        float get_rotation = gyro.roll();
-        cout<< get_rotation << endl;
-        if(get_rotation >=5||get_rotation <=-5){
-            if(get_rotation <= 0){
-                engL.engine_write(4,false);
-                engR.engine_write(4,true);
-            }
-            if(get_rotation >= 0){
-                engL.engine_write(4,true);
-                engR.engine_write(4,false);
-            }
-        }
-        else{
-            engL.engine_write(0,true);
-            engR.engine_write(0,true);
-        }
+        float currentAngle = gyro.roll();
+        float deltaTime = 0.01;  // Time between loop iterations (10ms)
+
+        bool moveBackward = false;
+
+        // Compute PID output, passing a pointer to update direction, and get speed
+        float speed = pid.compute(currentAngle, deltaTime, &moveBackward);
+        int engSpeedInt = static_cast<int>(round(speed)); 
+        cout<<speed<<endl;
+
+        engL.engine_write(engSpeedInt,moveBackward);
+        engL.engine_write(engSpeedInt,!moveBackward);
+        delay(10);
+
+
 
         
 
