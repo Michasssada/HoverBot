@@ -14,12 +14,27 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  if(Serial.available()){
+    String s = Serial.readString();
+    Serial.println(s);
+    if (s.equals("ld bw")) {
+      leds(255, 255, 255);
+    }
+    if (s.equals("ld r")) {
+      leds(255, 0, 0);
+    }
+    if (s.equals("ld g")) {
+      leds(0, 255, 0);
+    }
+    if (s.equals("ld b")) {
+      leds(255, 255, 0);
+    }
+  }
 
 }
 void initialization(){
   pixels.begin();
   Serial.begin(115200);
-  leds(255,0,0);
 }
 void leds(int red, int green , int blue){//leds will be defused anyway
   pixels.clear(); // Set all pixel colors to 'off'
@@ -33,4 +48,19 @@ void leds(int red, int green , int blue){//leds will be defused anyway
 
     pixels.show();   // Send the updated pixel colors to the hardware.
   }
+}
+void splitString(String data, char delimiter) {
+  int start = 0;
+  int end = data.indexOf(delimiter);
+
+  while (end != -1) {
+    String part = data.substring(start, end);
+    Serial.println(part);  // Print each part
+    start = end + 1;  // Move to the next part
+    end = data.indexOf(delimiter, start);  // Find the next delimiter
+  }
+
+  // Print the last part
+  String lastPart = data.substring(start);
+  Serial.println(lastPart);
 }
