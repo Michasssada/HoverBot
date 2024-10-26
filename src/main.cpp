@@ -32,6 +32,7 @@ int main()
     Logger.new_log("init complete");
     while (true)
     {
+        //temporal
         float mapped_val = mapValue(gyro.roll(),90,-90,30,-30);
         cout<< abs((int)mapped_val)<<","<<gyro.roll()<<endl;
         if(mapped_val < 0){
