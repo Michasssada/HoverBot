@@ -17,7 +17,7 @@ void loop() {
   if(Serial.available()){
     String s = Serial.readString();
     Serial.println(s);
-    if (s.equals("ld bw")) {
+    if (s.equals("ld w")) {
       leds(255, 255, 255);
     }
     if (s.equals("ld r")) {
@@ -28,6 +28,9 @@ void loop() {
     }
     if (s.equals("ld b")) {
       leds(255, 255, 0);
+    }
+    if (s.equals("ld off")) {
+      leds(0, 0, 0);
     }
   }
 
