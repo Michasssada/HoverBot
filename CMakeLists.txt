@@ -18,7 +18,6 @@ set(SOURCES
     src/SSD1306.cpp
     src/movement/engines.cpp
     src/Stabilizer.cpp
-    src/PID.cpp
 
     # Add other source files here
 )

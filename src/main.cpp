@@ -10,15 +10,15 @@
 #include "gyro.h"
 #include "movement/engines.h"
 #include "Stabilizer.h"
-#include "PID.h"
 using namespace std;
 
 void print(string text)
 {
     cout << text << endl; // Function to print text to console
 }
-void stabilize(){
-    
+
+float mapValue(float x, float in_min, float in_max, float out_min, float out_max) {
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 int main()
 {
@@ -26,26 +26,23 @@ int main()
     ReadCfg Config;             // Create conf object
     //Stabilizer stabilize(25,16,13,6);
     SSD1306 display(0x3C);
-    Engines engL(12,26);
-    Engines engR(18, 16);
-    PID pid(1.0, 0, 0);
+    Engines engR(12,26);
+    Engines engL(18, 16);
     MPU6050 gyro;
     Logger.new_log("init complete");
     while (true)
     {
-        float currentAngle = gyro.roll();
-        float deltaTime = 0.01;  // Time between loop iterations (10ms)
-
-        bool moveBackward = false;
-
-        // Compute PID output, passing a pointer to update direction, and get speed
-        float speed = pid.compute(currentAngle, deltaTime, &moveBackward);
-        int engSpeedInt = static_cast<int>(round(speed)); 
-        cout<<speed<<endl;
-
-        engL.engine_write(engSpeedInt,moveBackward);
-        engL.engine_write(engSpeedInt,!moveBackward);
-        delay(10);
+        float mapped_val = mapValue(gyro.roll(),90,-90,30,-30);
+        cout<< abs((int)mapped_val)<<","<<gyro.roll()<<endl;
+        if(mapped_val < 0){
+            engR.engine_write(abs((int)mapped_val),false);
+            engR.engine_write(abs((int)mapped_val),true);
+        }
+        else{
+            engR.engine_write(abs((int)mapped_val),true);
+            engR.engine_write(abs((int)mapped_val),false);
+        }
+        
 
 
 
