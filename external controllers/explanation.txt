@@ -1,0 +1,1 @@
+most of the peripherial devices will be in the external Mega 2560 board connected by uart to the Raspberry Pi
